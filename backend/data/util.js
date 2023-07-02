@@ -1,4 +1,4 @@
-const fs = require("fs/promise");
+const fs = require("fs-promise");
 
 async function readData() {
   const data = await fs.readFile("posts.json", "utf8");
