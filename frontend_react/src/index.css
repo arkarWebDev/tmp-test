@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root {
+  --primary-color: #f9d949;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main {
+  width: 60%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+a:hover {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+  border-radius: 8px;
+}
+nav div a {
+  margin-right: 10px;
+}
+
+nav div a.active {
+  color: #fff;
+  background-color: #000;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.post {
+  width: 70%;
+  text-align: center;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px -4px grey;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 2px;
+}
+
+.details {
+  width: 80%;
+  margin: auto;
+  background-color: dimgrey;
+  padding: 2rem;
+  border-radius: 9px;
+}
+
+.detail-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.details img {
+  width: 70%;
+  margin: 0 20% 0 15%;
+  border-radius: 8px;
+}
+
+hr {
+  border: 2px solid dimgray;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.desc {
+  color: #fff;
+  text-align: center;
+}
+
+.Icon,
+.Icon-calender {
+  width: 1.2rem;
+  margin: 6px;
+  padding: 6px;
+  color: #e8bf1c;
+}
+.Icon {
+  transition: 0.2s;
+}
+
+.Icon:hover {
+  transform: 10px;
+}
+.Icon-calender {
+  color: #a19c0a;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 0 5px;
+  color: white;
+  opacity: 0.8;
+}
+
+.form-section {
+  width: 60%;
+  margin: auto;
+  background-color: dimgrey;
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.form-section p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-section div {
+  margin-top: 20px;
+}
+
+.form-section form div label {
+  display: block;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.form-section form div input,
+textarea {
+  width: 90%;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+.text-white {
+  color: #fff;
+  opacity: 0.8;
+}
+.btn {
+  width: 40%;
+  margin-top: 5px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+
+.edit-delete {
+  display: flex;
+  cursor: pointer;
+}
+
+.edit-delete p {
+  color: white;
+}
+
+.trash {
+  color: red;
+}
+
+.error-text {
+  display: flex;
+  justify-content: center;
+  margin: 5px auto;
+}
+
+.error {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.login-btn {
+  margin-top: 8px;
+}
+
+form div label {
+  color: white;
+}
+
+.create-acc {
+  font-size: 16px !important;
+  font-weight: normal !important;
+}
+
+.create-acc a {
+  cursor: pointer;
+  text-decoration: underline !important;
+}
+
+.reg {
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.reg:hover {
+  color: black;
+}
+
+.loading {
+  text-align: center;
+  margin: 25% 30%;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #000;
+  border-color: #000 transparent #000 transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+.lds-hourglass p {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .main,
+  .details,
+  .form-section {
+    width: 100%;
+  }
+}
